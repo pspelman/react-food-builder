@@ -1,0 +1,50 @@
+.Logo {
+    /*background-color: rgba(245, 245, 245, 0.47);*/
+    background-color: antiquewhite;
+    padding: .5rem;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: .2rem;
+    box-shadow: 0rem 0rem 10rem .5rem goldenrod;
+}
+
+.Logo img {
+    height: 100%;
+}
+
+
+
+/*.OrderButton:not(:disabled) {*/
+    /*animation: enable 0.3s linear;*/
+/*}*/
+
+.Logo {
+    /*animation: enable 0.9s cubic-bezier(.89,.9,.8,.9);*/
+    animation: enable 0.9s linear;
+}
+
+
+/*@keyframes logo-roto {*/
+    /*from { transform: rotate(0deg); }*/
+    /*to { transform: rotate(360deg); }*/
+/*}*/
+
+/*.Logo {*/
+    /*animation: logo-roto infinite 20s cubic-bezier(.2,.2,.2,.2);*/
+    /*!*height: 80px;*!*/
+/*}*/
+
+
+@keyframes enable {
+    0% {
+        transform: scale(1);
+        /*animation: logo-roto 0.5s linear;*/
+        /*transform: rotate(180deg);*/
+    }
+    60% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

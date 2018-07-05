@@ -1,0 +1,45 @@
+/*it will only be available on small screens*/
+.SideDrawer {
+    position: fixed;
+    width: 280px;
+    max-width: 70%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    /*z-index needs to be above the backdrop, so the sidedrawer can be used*/
+    z-index: 200;
+    background-color: white;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+}
+
+
+/*this will make it so the sideDrawer is not shown on larger screens
+thus it will be necessary to use mobile mode to test this in the browser*/
+@media (min-width: 500px) {
+    .SideDrawer {
+        display: none;
+    }
+}
+
+/*open and close will be attached conditionally
+ they will be responsible for triggering the animations */
+.Open {
+    /*this will shift the sidedrawer into the position defined above*/
+    transform: translateX(0)
+}
+
+.Close {
+    /*this will shift the sidedrawer to the left and out of view*/
+    transform: translateX(-100%);
+}
+
+.Logo {
+    height: 11%;
+    /*margin-bottom: 2rem;*/
+    margin-bottom: 32px;
+    /*width: 2rem;*/
+    width: 0px;
+}
+
